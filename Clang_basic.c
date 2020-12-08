@@ -47,21 +47,21 @@ int main(void)
 	//while
 	int tmp = 0;
 	while (tmp < a * b) {
-		printf("%d", tmp);
-		if (tmp == int(a * b / 2)) printf("%d", tmp);
+		
+		if (tmp == int(a * b / 2)) printf("%d\n", tmp);
 		tmp++;
 	}
 
 	//function
-	printf("before function: %d %d", a, b);
+	printf("before function: %d %d\n", a, b);
 	swap(&a, &b);
-	printf("after function: %d %d", a, b);
+	printf("after function: %d %d\n", a, b);
 	
 	//Macro
-	printf("before macro: %d %d", a, b);
-	int c;
-	SWAP(a, b, c);
-	printf("after macro: %d %d", a, b);
+	printf("before macro: %d %d\n", a, b);
+	int d;
+	SWAP(a, b, d);
+	printf("after macro: %d %d\n", a, b);
 
 	return 0;
 }
